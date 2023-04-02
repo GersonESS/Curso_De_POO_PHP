@@ -6,14 +6,21 @@
             var $carga;
             var $tampada;
             function rabiscar() {
+                if  ($this->tampada == true) {
 
+                echo "<p>Nao possso rabiscar</p>";
+
+                } else {
+                    echo "<p>Estou rabiscando</p>";  
+                }
             }
-            function tampada() {
+            function tampar() {
+                $this->tampada = true;
 
             }
         
             function destampar() {
-                
+                $this->tampada = false;  
             }
         }
     ?>
